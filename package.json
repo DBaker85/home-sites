@@ -1,0 +1,19 @@
+{
+  "name": "home-sites",
+  "version": "0.0.1",
+  "description": "Monorepo to be deployed on sbc home server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DBaker85/home-sites.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DBaker85/home-sites/issues"
+  },
+  "homepage": "https://github.com/DBaker85/home-sites#readme"
+}
