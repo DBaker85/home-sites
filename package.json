@@ -15,5 +15,18 @@
   "bugs": {
     "url": "https://github.com/DBaker85/home-sites/issues"
   },
-  "homepage": "https://github.com/DBaker85/home-sites#readme"
+  "homepage": "https://github.com/DBaker85/home-sites#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "pm2": "^4.4.1",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.0.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
 }
