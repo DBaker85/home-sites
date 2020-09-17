@@ -5,15 +5,13 @@
   "main": "index.js",
   "private": true,
   "workspaces": [
-    "catstats"
+    "catstats",
+    "site-builder"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DBaker85/home-sites.git"
-  },
+  "repository": "git+https://github.com/DBaker85/home-sites.git",
   "author": "",
   "license": "ISC",
   "bugs": {
