@@ -1,16 +1,19 @@
 {
-  "name": "site-builder",
+  "name": "tools",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "npx tsc builder.ts"
+    "build": "tsc builder.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-fetch": "^2.6.1",
     "rxjs": "^6.6.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
   }
 }
