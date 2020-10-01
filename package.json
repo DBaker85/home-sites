@@ -6,7 +6,6 @@
   "private": true,
   "workspaces": [
     "cats",
-    "catstats",
     "tools"
   ],
   "scripts": {

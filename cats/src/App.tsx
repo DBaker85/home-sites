@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FunctionComponent } from 'react';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { useSelector } from 'react-redux';
 
-function App() {
+import { RootStateType } from './store/index';
+import { light, dark } from './styles/theme';
+import { globalStyle } from './styles';
+import { Main } from './main/Main';
+
+const GlobalStyle = createGlobalStyle`${globalStyle}`;
+
+const App: FunctionComponent = () => {
+  const theme = useSelector((state: RootStateType) => state.theme);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme.dark ? dark : light}>
+      <GlobalStyle />
+      <Main />
+    </ThemeProvider>
   );
-}
+};
 
-export default App;
+export { App };
