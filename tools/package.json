@@ -5,7 +5,8 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "tsc builder.ts"
+    "build": "webpack-cli",
+    "start": "nodemon --exec ts-node builder.ts "
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,14 @@
     "rxjs": "^6.6.3"
   },
   "devDependencies": {
-    "typescript": "^4.0.3"
+    "@types/node-fetch": "^2.5.7",
+    "nodemon": "^2.0.4",
+    "pnp-webpack-plugin": "^1.6.4",
+    "ts-loader": "^8.0.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.2"
   }
 }

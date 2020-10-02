@@ -1,12 +1,11 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
-const nodeExternals = require('webpack-node-externals');
 const PnpPlugin = require('pnp-webpack-plugin');
 
 module.exports = {
   target: 'node',
   entry: {
-    app: ['./server/server.ts'],
+    app: ['./builder.ts'],
   },
   module: {
     rules: [
@@ -17,7 +16,7 @@ module.exports = {
           {
             loader: 'ts-loader',
             options: {
-              configFile: path.resolve(__dirname, 'server', 'tsconfig.json'),
+              configFile: path.resolve(__dirname, 'tsconfig.json'),
             },
           },
         ],
@@ -25,7 +24,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts'],
+    extensions: ['.ts'],
     plugins: [PnpPlugin],
   },
   resolveLoader: {
@@ -33,7 +32,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'server.js',
+    filename: 'builder.js',
   },
   externals: [nodeExternals()],
 };

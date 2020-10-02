@@ -7,12 +7,7 @@
     "strictNullChecks": true,
     "moduleResolution": "node",
     "sourceMap": true,
-    "outDir": "./",
-    "baseUrl": "./",
-    "skipLibCheck": true,
-    "paths": {
-      "*": ["node_modules/*"]
-    }
+    "skipLibCheck": true
   },
   "include": ["./**/*.ts"]
 }
