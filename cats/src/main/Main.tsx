@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 
-import { toggleTheme } from '../store/theme/actions';
+import { toggleTheme } from '../store/theme/themeSlice';
 import { RootStateType } from '../store';
 import { Toggle } from '../components/toggle/toggle';
 import { Avatar } from '../components/avatars/avatar';
